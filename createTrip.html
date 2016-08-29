@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>  
+	
+	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+	<link rel="stylesheet" href="css/createTrip.css" type="text/css">
+	<!-- Custom Fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>  
+	<link rel="stylesheet" href="css/main-animate.min.css" type="text/css">
+	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+</head>
+
+<body id="page-top" class="background">
+	<nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<div class='inLine'>
+					<a class="navbar-brand page-scroll" href="#page-top">BTravel </a>
+					
+				</div>
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+
+			</div>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav navbar-right" id="menuBar">
+					<li>
+						<a class="page-scroll" href="index.html">Welcome</a>
+					</li>
+					<li>
+						<a class="page-scroll" href="findTrip.html" id='findTripPagebtn'> Find a trip </a>
+					</li>
+
+				</ul>
+			</div>
+			<!-- /.navbar-collapse -->
+		</div>
+		<!-- /.container-fluid -->
+	</nav>
+
+	<div id = "Container" >
+
+		<div id = "formContent"  >
+		
+			<form action="http://51304928.host22.com/upload.php" method="post" enctype="multipart/form-data" id="createForm" >
+				<div class="thumbnail" id="tripMainInfo">
+					<div class = "groupInside">
+					<h4> Trip Title </h4>
+					<input type="text"  name ='title0' required  class="fit form-control">
+
+					<h4> Trip's main destination </h4>
+					<input type="text" name="mainDest" id="search_place" class=" fit form-control" autocomplete="off" placeholder=" City or province name ">
+					<h4> Cover </h4>
+
+					<input type="file" name="cover0" id="fileToUpload" required class="fit" accept='image/*'>
+					<h4> Summary ( maximum 200 characters ) </h4>
+					<textarea  maxlength=200 class="detail form-control" id='detail0' name='detail0'> </textarea>
+
+					<div class="form-group">
+						<div class="example fit date " >
+							<h4 >Start Date</h4>
+							<input name='startDate' id="startDate" type="hidden" class="form-control">
+						</div>
+					</div>
+				
+					<h4> Duration </h4>
+					
+					<input type= 'number' name='duration' class="form-control" style="max-width: 100px;">
+					<select name="durationType">
+						<option value="hours">hours</option>
+						<option value="days">days</option>		
+					</select>
+					
+					<h4> Members </h4>
+					<div class="row">
+						<div class="col-xs-5">
+						<input type='number' name='minMem'  class="fit form-control">
+						</div>
+						<div class="col-xs-1"><p>to</p></div>
+						<div class="col-xs-5">
+						<input type='number' name='maxMem'  class="fit form-control">
+						</div>
+					</div>
+					<h4> Price ($)</h4>
+					<input type ='number' name='price'  class="fit form-control">
+					</div>
+				</div>
+
+		<div class = "thumbnail">
+		<div class= "groupInside">
+				<h3> HighLight ( maximum 3) </h3>
+				
+				<p> Any highlight violate these rules will be ignored : </p>
+				<div class="warningtext">
+				<p> - Must have title and photo </p>
+				<p> - Picture type must be either .jpg, .jpeg, .png or .gif </p>
+				</div>
+				<p> If you don't want to use all highlights provided , just leave them empty </p>
+				
+
+					<div id="hl1" class = "highLight">
+
+						<h4> HighLight 1 </h4>
+						<p> Title : </p>
+						<input type="text"  name ='title1'  class="fit">
+						<p> Photo : </p>
+						<input type="file" name="cover1" id="fileToUpload1" class="fit" accept='image/*'>
+						<p> Detail </p>
+						<textarea  maxlength=500 class="detail" id='detail1' name='detail1'> </textarea>
+
+
+					</div>
+					<div id ='hl2' class="highLight" >
+
+
+						<h4> HighLight 2 </h4>
+						<p> Title : </p>
+						<input type="text"  name ='title2' class="fit">
+						<p> Photo : </p>
+						<input type="file" name="cover2" id="fileToUpload2" class="fit" accept='image/*'>
+						<p> Detail </p>
+						<textarea  maxlength=500 class="detail" id='detail2' name='detail2'> </textarea>
+					</div>
+
+					<div id = "hl3" class = "highLight">
+
+
+						<h4> HighLight 3</h4>
+						<p> Title : </p>
+						<input type="text"  name ='title3' class="fit">
+						<p> Photo : </p>
+						<input type="file" name="cover3" id="fileToUpload3" class="fit" accept='image/*'>
+						<p> Detail </p>
+						<textarea  maxlength=500 class="detail" id='detail3' name='detail3'> </textarea>
+						<br>
+						<br>
+						<div class="g-recaptcha" data-sitekey="6LdR2iQTAAAAADmMwqyhzdKdzbMK2bQfGiWiDGCR"></div>
+
+					</div>
+				</div>
+
+				</div>
+				<div style="text-align:center;">
+
+					
+					<input type="submit" value="Upload" name="submit" class="btn btn-success btn-lg">
+					<div style="text-align:center;">
+					<br>
+					<br>
+				</form>
+			</div>
+		</div>
+
+		<script src="js/jquery.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		
+		<script src="http://maps.googleapis.com/maps/api/js?libraries=places&sensor=false&language=en"></script>
+		<script src="js/myJS/global.js"></script>
+		<script src="js/myJS/navBar.js"></script>
+		<script src="js/jquery_form.js"></script>
+		<script src="js/myJS/createTrip.js"></script>
+		<script src="js/jquery.date-dropdowns.min.js"></script>
+			</body>
+	</html>

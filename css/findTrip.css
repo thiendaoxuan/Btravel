@@ -1,0 +1,166 @@
+/*!
+ * Start Bootstrap - Heroic Features HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+body {
+    padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+
+.hero-spacer {
+    margin-top: 50px;
+}
+
+.hero-feature {
+    margin-bottom: 30px;
+}
+
+footer {
+    margin: 50px 0;
+}
+
+.navbar-default {
+    border-color: rgba(34,34,34,.05);
+    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    background-color: #fff;
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+}
+
+.navbar-default .navbar-header .navbar-brand {
+    text-transform: uppercase;
+    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    font-weight: 700;
+    color: #f05f40;
+}
+
+.navbar-default .navbar-header .navbar-brand:hover,
+.navbar-default .navbar-header .navbar-brand:focus {
+    color: #eb3812;
+}
+
+.navbar-default .nav > li>a,
+.navbar-default .nav>li>a:focus {
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 700;
+    color: #222;
+}
+
+.navbar-default .nav > li>a:hover,
+.navbar-default .nav>li>a:focus:hover {
+    color: #f05f40;
+}
+
+.navbar-default .nav > li.active>a,
+.navbar-default .nav>li.active>a:focus {
+    color: #f05f40!important;
+    background-color: transparent;
+}
+
+.navbar-default .nav > li.active>a:hover,
+.navbar-default .nav>li.active>a:focus:hover {
+    background-color: transparent;
+}
+
+
+.hero-spacer {
+    margin-top: 50px;
+}
+
+.hero-feature {
+    margin-bottom: 30px;
+}
+
+.show-content{
+	margin-right: 5%;
+	margin-left: 5%;
+    
+
+}
+
+.thumb {
+    background-color: white;
+    border-radius: 10px ;
+}
+
+.thumb img {
+    padding: 1px;
+    width: 100%;
+    border-radius: 10px 10px 7px 7px;
+
+}
+
+.thumb .caption {
+    padding: 15px;
+
+}
+
+.example {
+	display: none;
+}
+
+.background {
+	background-color: #ffff66;
+}
+
+.tripTitle {
+	text-transform: uppercase;
+	font-weight: 700;
+    font-size: 120%;
+	color: #ff9900;
+}
+
+.searchIco{
+	margin-top: 5px;
+}
+
+.inLine{
+	display: inline;
+}
+
+.btn-custom{
+	background-color: #00cc00;
+	font-weight: 700;
+	color: #ffffff;
+}
+
+#wrap {
+    float: left;
+    position: relative;
+    left: 50%;
+}
+
+#content {
+    float: left;
+    position: relative;
+    left: -50%;
+}
+
+.endpage{
+	padding-bottom: 30px;
+}
+
+.pac-container {
+z-index: 2150000000;
+}
+
+.testt {
+    
+   
+    display: inline;
+    
+
+
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+.caption p {
+
+    font-weight: 550;
+}

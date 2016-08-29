@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Login</title>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+  
+    
+</head>
+
+<body>
+    <section id="login">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="form-wrap">
+                        <img alt="logo" class="profile-img" id="loginLogo" src='img/icon.png'>
+                        <h1>BTravel Login</h1>
+						<p style='color:red; font-weight:bold' id='infoText'></p>
+						
+                        <form action="http://51304928.host22.com/login.php" autocomplete="off" id="loginForm" method="post" name="loginForm" role="form">
+                            <div class="form-group">
+                                <label class="sr-only" for="username">Email</label>
+                                <input class="form-control" id="username" name="username" placeholder="Username" type="text">
+                            </div>
+                            <div class="form-group">
+                                <label class="sr-only" for="key">Password</label>
+                                <input class="form-control" id="passwords" name="passwords" placeholder="Password" type="password">
+                            </div>
+                            
+							
+							 <button class="btn btn-custom btn-lg btn-block"  id="btn-login" type="submit" > Login  </button>
+                             <button type ="button" onclick="guest();"class='btn btn-custom2 btn-lg btn-block' > Continue as Guest </button>
+									
+							
+							<a class="forget" data-target=".forget-modal" data-toggle="modal" href="javascript:;">Forget your password ?</a> 
+							
+							<a class="forget" href="signUp.html">Create new account for free</a>
+                        </form>						
+                        <hr>
+                    </div>
+					
+					
+                        
+                </div>
+                <!-- /.col-xs-12 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+		
+    </section>
+	
+    <div aria-hidden="true" aria-labelledby="myForgetModalLabel" class="modal fade forget-modal" role="dialog" tabindex="-1">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content" >
+                <div class="modal-header">
+                    <button class="close" data-dismiss="modal" type="button"><span aria-hidden="true">×</span> <span class="sr-only">Close</span>
+                    </button>
+                    <h4 class="modal-title" style="font-weight:bold">Recovery password</h4>
+                </div>
+                <div class="modal-body" style="background-color:#66ff99">
+                    <h5 style='font-weight:bold'>Type your Username</h5>
+					<input autocomplete="off" class="form-control" id="recovery-userName" name="recovery-userName" type="text">
+					<h5 style='font-weight:bold'>Type your email account</h5>
+                    <input autocomplete="off" class="form-control" id="recovery-email" name="recovery-email" type="email">
+					<h5 style="color:green; font-weight:2px"> If 2 info match, your passwords will be send to your email address <h5>
+                </div>
+                <div class="modal-footer">
+				
+                    <button class="btn btn-default" data-dismiss="modal" type="button">Cancel</button>
+                    <button class="btn btn-custom" type="button">Recovery</button>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+	
+	<div class="modal fade messageModal" id="messageBox" role="dialog">
+		<div class="modal-dialog">      
+			<div class="modal-content">
+				<div class="modal-body">
+					<h3 style="font-weight:bold" id='messageTitle'> TITLE <h3>
+					<h4 id="messageText"> Some message in the message box that maybe long or not so long <h4>
+				</div>
+				<div class="modal-footer">
+				<button class="btn btn-custom" data-dismiss="modal" type="button"> OK </button>
+				</div>
+				</div>
+				</div>
+				</div>
+	
+	
+	
+    <!-- /.modal -->
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+            </div>
+        </div>
+    </footer>
+	<script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	<script src="js/myJS/global.js"></script>
+	<script src="js/myJS/loginPage.js"></script>
+</body>
+
+</html>

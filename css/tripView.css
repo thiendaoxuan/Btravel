@@ -1,0 +1,273 @@
+body {
+    padding-top: 70px;
+}
+.hero-spacer {
+    margin-top: 50px;
+}
+.hero-feature {
+    margin-bottom: 30px;
+}
+footer {
+    margin: 50px 0;
+}
+.navbar-default {
+    border-color: rgba(34, 34, 34, .05);
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    background-color: #fff;
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+}
+.navbar-default .navbar-header .navbar-brand {
+    text-transform: uppercase;
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 700;
+    color: #f05f40;
+}
+.navbar-default .navbar-header .navbar-brand:hover,
+.navbar-default .navbar-header .navbar-brand:focus {
+    color: #eb3812;
+}
+.navbar-default .nav > li>a,
+.navbar-default .nav>li>a:focus {
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 700;
+    color: #222;
+}
+
+.hero-spacer {
+    margin-top: 50px;
+}
+.hero-feature {
+    margin-bottom: 30px;
+}
+.background {
+    background-color: #ffff66;
+}
+.inLine {
+    display: inline;
+}
+.custom-btn {
+    
+    background-color: #33cc33;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 22px;
+}
+#wrap {
+    float: left;
+    position: relative;
+    left: 50%;
+}
+#content {
+    float: left;
+    position: relative;
+    left: -50%;
+}
+.endpage {
+    padding-bottom: 30px;
+}
+#tripContent {
+    display: block;
+    margin: auto;
+    max-width: 800px;
+}
+#cover {
+    width: 100%;
+}
+#Container {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+#title {
+    text-transform: uppercase;
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 700;
+    color: #00cc00;
+    text-align: center;
+    vertical-align: middle;
+}
+#summaryText {
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-style: italic;
+    font-weight: 600;
+    background-color: #ffffcc;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.detailTitle {
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    color: #009933;
+    font-weight: 600;
+    font-size: 17px;
+}
+.centerText {
+    text-align: center;
+    vertical-align: middle;
+}
+html {
+    height: 90%;
+    width: 90%;
+}
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+.detail_icon {
+    height: 40px;
+    padding-right: 20px;
+}
+.detail_margin {
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+#googleMap {
+    margin-bottom: 20px;
+}
+#tripDetail  {
+    margin-left: 10%;
+    margin-right: 10%;
+    overflow: hidden;
+}
+#peopleInTrip  {
+    margin-left: 10%;
+    margin-right: 10%;
+    overflow: hidden;
+}
+.centerVertical {
+    margin-top: 3px;
+}
+hr {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-style: inset;
+    border-width: 1px;
+}
+#highLightArea {
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.tripImages {
+    width: 100%;
+    border-radius: 2px;
+}
+.highLightInfo {
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    text-align: justify;
+}
+#guideInfo {
+    margin: auto;
+    background-color: #ffff66;
+    max-width: 400px;
+    font-size: 16px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 20px;
+}
+#guideNameTitle {
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    color: #ff3300;
+    text-align: center;
+}
+#guideAvatar {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    height: 90%;
+    width: 90%;
+    max-width: 100px;
+
+}
+
+#viewGuide {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: 00cc00;
+
+}
+
+#viewGuide:hover {
+    color: 003300;
+    cursor: hand;
+}
+
+.modify1 {
+    margin: 20px;
+    background: #ff8000;
+    color: white;
+    font-size: 700;
+}
+
+.modify2 {
+    margin: 20px;
+    background: #00ff40;
+    color: white;
+    font-size: 700;
+}
+
+.modify{
+    display: inline;
+    visibility: hidden;
+}
+
+.group_chat_icon {
+    height: 50px;
+    width: 50px;
+    display: none;
+}
+
+.comment_box {
+    overflow-y: auto;
+    height: 50vh;
+    min-height: 200px;
+}
+
+.writeComment {
+    width: 90%;
+    height: 50px;
+}
+
+.avatar_chat {
+    width: 100%;
+    max-height: 50px;
+    max-width : 50px;
+    margin: 5px;
+    border-radius: 5px;
+    
+}
+
+.userName_chat{
+    font-weight: 700;
+    color: #009933;
+    font-size: 15px;
+    font-style: italic;
+}
+
+.loadMoreComment {
+    font-weight:  500
+    color : #3399ff;
+    font-size: 15px;
+    cursor: pointer;
+    text-align: center;
+    border : 1px solid;
+    border-radius: 10px;
+    display: none;
+}
+
+#waitspin {
+    width: 100%;
+    margin: auto;
+}

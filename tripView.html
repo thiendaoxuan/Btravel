@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="description" content="">
+   <meta name="author" content="">
+   <title>  TRIP View</title>
+   <!-- Bootstrap Core CSS -->
+   <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+   <link rel="stylesheet" href="css/tripView.css" type="text/css">
+   <!-- Custom Fonts -->
+   <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+   rel='stylesheet' type='text/css'>
+   <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic'
+   rel='stylesheet' type='text/css'>
+   <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+   <script type="text/javascript" src="http://maps.google.com/maps/api/js"></script>
+   <!-- Plugin CSS -->
+   <link rel="stylesheet" href="css/main-animate.min.css" type="text/css">
+   <!-- Custom CSS -->
+   
+</head>
+<body id="page-top" class="background">
+   <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+         <!-- Brand and toggle get grouped for better mobile display -->
+         <div class="navbar-header">
+            <div class='inLine'>
+               <a class="navbar-brand page-scroll" href="#page-top">BTravel </a>
+               <a id='group-chat-btn' class="page-scroll" href="javascript:;" data-toggle="modal" data-target=".groupChatModal">
+                  <img src="img/group_chat.png" class="group_chat_icon" id='group_chat_icon'>
+               </a>
+            </div>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+               <span class="sr-only">Toggle navigation</span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+            </button>
+         </div>
+         <!-- Collect the nav links, forms, and other content for toggling -->
+         <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right" id="menuBar">
+               <li>
+                  <a class="page-scroll" href="index.html">Welcome</a>
+               </li>
+               <li>
+                  <a class="page-scroll" href="findTrip.html" id='findTripPagebtn'> Find a trip </a>
+               </li>
+               
+            </ul>
+         </div>
+         <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container-fluid -->
+   </nav>
+   <br>
+   <br>
+   <br>
+   <div id="Container" style="width:100%">
+      <div id="tripContent" style="width:100%">
+         <div id="thumbContent" class="thumbnail" style="width:100%">
+            <i id="waitspin" class="fa fa-circle-o-notch fa-spin fa-3x fa-fw"></i>
+            <img id='cover' src="" alt="">
+            <div class="centerText">
+               <h3 id='title'></h3>
+               <div class = "modify" id='modify'>
+                  <button class="btn btn-custom modify1" id ="modify1" data-dismiss="modal" type="button" onclick="closeTrip()"> Close Trip </button>
+                  <button class="btn btn-custom modify2" id ="modify2" data-dismiss="modal" type="button" onclick="startTrip()"> Start Trip </button>
+               </div>
+               <p id='mainDestText'></p>
+               <p>Hosted by :
+                  <a href="#" id='guideName'> </a>
+               </p>
+               <p id='summaryText'></p>
+            </div>
+            <div id='googleMap' style="width:100%; height:300px;"></div>
+            <hr id='break1'>
+            <hr>
+            <div id="tripDetail">
+               <div class='row detail_margin'>
+                  <div class="col-xs-2">
+                     <img class='detail_icon' src='img/date_icon.png'>
+                  </div>
+                  <div class="col-xs-10 centerVertical">
+                     <span class='detailTitle'>&nbsp DEPARTURE : </span>
+                     <span id='departureDetail'> Contact guide to disscuss about departure time</span>
+                  </div>
+               </div>
+               <div class='row detail_margin'>
+                  <div class="col-xs-2">
+                     <img class='detail_icon' src='img/group_icon.png'>
+                  </div>
+                  <div class="col-xs-10 centerVertical">
+                     <span class='detailTitle'>&nbsp GROUP SIZE : </span>
+                     <span id='groupSizeDetail'> 1-5 people</span>
+                  </div>
+               </div>
+               <div class='row detail_margin'>
+                  <div class="col-xs-2">
+                     <img class='detail_icon' src='img/price_icon.png'>
+                  </div>
+                  <div class="col-xs-10 centerVertical">
+                     <span class='detailTitle'> &nbsp PRICE PER PAX : </span>
+                     <span id='priceDetail'> 33$</span>
+                  </div>
+               </div>
+               <div class='row detail_margin'>
+                  <div class="col-xs-2">
+                     <img class='detail_icon' src='img/duration_icon.png'>
+                  </div>
+                  <div class="col-xs-10 centerVertical">
+                     <span class='detailTitle'>&nbsp DURATION :</span>
+                     <span id='durationDetail'> 48 hours </span>
+                  </div>
+               </div>
+            </div>
+            <div id="guideInfo" class="thumbnail">
+               <h3 id='guideNameTitle'> Guide Info </h3>
+               <img src='img/unknownAvatar.png' id='guideAvatar'>
+               <span class='detailTitle'> FirstName  : </span>
+               <span id='guideFirstName'>  </span>
+               <span class='detailTitle'> &nbsp LastName  : </span>
+               <span id='guideLastName'>  </span>
+               <br>
+               <span class='detailTitle'> BirthDate :</span>
+               <span id='guideBirthDate'> </span>
+               <br>
+               <span class='detailTitle'> Email :</span>
+               <span id='guideEmail'>  </span>
+               <br>
+               <span class='detailTitle'> Phone :</span>
+               <span id='guidePhone'>  </span>
+               <br>
+               <a id='viewGuide'> >> View more Info </a>
+            </div>
+            <br>
+            <br>
+            <div style="text-align:center;">
+               <button class='btn custom-btn' onclick='joinTrip()' id='join_leave'>JOIN TRIP</button>
+               
+            </div>
+            <br>
+            
+            <div id ='peopleInTrip'>     
+            </div>
+            <br>
+         </div>
+      </div>
+   </div>
+   <div id="wrap" class="endpage">
+   </div>
+
+   <!-- jQuery -->
+   <script src="js/jquery.js"></script>
+   <!-- Bootstrap Core JavaScript -->
+   <script src="js/bootstrap.min.js"></script>
+   <script src="js/myJS/global.js"></script>
+   <script src="js/myJS/navBar.js"></script>
+   <script src="js/myJS/tripView.js"></script>
+   
+</body>
+<!-- /.modal -->
+<div class="modal fade messageModal" id="messageBox" role="dialog">
+   <div class="modal-dialog">
+      <div class="modal-content">
+         <div class="modal-body">
+            <h3 style="font-weight:bold" id='messageTitle'>
+               TITLE 
+               <h3>
+                  <h4 id="messageText">
+                     Some message in the message box that maybe long or not so long 
+                     <h4>
+                     </div>
+                     <div class="modal-footer">
+                        <button class="btn btn-custom" data-dismiss="modal" type="button"> OK </button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            
+            <!-- /.groupchat modal -->
+            <div class="modal fade groupChatModal" id="groupChatModal" role="dialog">
+               <div class="modal-dialog">
+                  <div class="modal-content">
+                     <div class="modal-body">
+                        <h3 style="font-weight:bold" id='messageTitle'>
+                           Trip Discussion 
+                        </h3>
+
+                        <p class='loadMoreComment' id='loadMoreComment' onclick="loadComment();"> Load More Comment </p>
+                        <div class = 'comment_box' id='comment_box'>
+                           
+                         
+                        </div>
+                        <textarea class='writeComment' id='writeComment' placeholder='What do you want to know more about this trip ?'></textarea>
+                        <br>
+                        <button class="btn btn-custom"  type="button" onclick="postComment();"> Post </button>
+                     </div>
+                     <div class="modal-footer">
+                        <button class="btn btn-custom" data-dismiss="modal" type="button"> Close </button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            </html>

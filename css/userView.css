@@ -1,0 +1,110 @@
+.navbar-default {
+    border-color: rgba(34, 34, 34, .05);
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    background-color: #fff;
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+}
+.navbar-default .navbar-header .navbar-brand {
+    text-transform: uppercase;
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 700;
+    color: #f05f40;
+}
+.navbar-default .navbar-header .navbar-brand:hover,
+.navbar-default .navbar-header .navbar-brand:focus {
+    color: #eb3812;
+}
+.navbar-default .nav > li>a,
+.navbar-default .nav>li>a:focus {
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 700;
+    color: #222;
+}
+
+
+#userContent {
+    display: block;
+    margin: auto;
+    max-width: 800px;
+}
+
+body {
+    background-color: #ffff66;
+}
+
+#userAvatar {
+    margin: auto;
+    width: 50%;
+    max-width: 200px;
+    min-width: 100px;
+    border-radius: 50%;
+    border: 5px solid;
+    border-color: #000000;
+}
+
+#contactInfo{
+    background-color: #000000;
+}
+
+.contactIcon {
+    
+    
+    height: 25px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+
+
+
+}
+
+.sectionTitle {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 18px;
+   
+    text-align: center;
+}
+
+.info_contact {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 110%;
+    color: #ffffff;
+    text-align: center;
+}
+
+.place-data{   
+    margin: auto;
+    width: 50%;
+}
+
+#tripJoint,#tripGuide {
+    text-align: center;
+}
+
+#tripJoint img, #tripGuide img {
+    border-radius: 5px;
+    
+    max-width: 200px;
+    max-height: 140px;
+}
+
+.oneTrip {
+    display: block;
+    margin : 20px;
+    font-weight: bold;
+}
+
+#rate {
+    text-align: center;
+}
+

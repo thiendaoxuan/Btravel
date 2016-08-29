@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<title>Edit Profile</title>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+	<link href="css/index.css" rel="stylesheet">
+	
+	</script>
+</head>
+
+<body>
+	<section id="login">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="form-wrap">
+						<h1>Edit profile</h1>
+
+						<div class="form-group">
+							<span> UserName : </span> <span id='userName'> userName </span>
+							
+							</div>
+
+
+							<div class="form-group">
+							<span> Passwords : </span> <span> ********** </span>
+							<button class='btn-success change-pass'> change </button>
+							</div>
+						<form action="http://51304928.host22.com/signUp.php" autocomplete="off" id="signUpForm" method="post" name="signUpForm" role="form">
+							
+
+
+							
+
+
+							<div class="form-group">
+								<input class="form-control" id="email" name="email" placeholder="Email" type="text">
+							</div>
+							
+							<div class="form-group">
+								<input class="form-control" id="phone" name="phone" placeholder="Phone" type="text">
+							</div>
+
+
+
+							<div class="form-group">
+								<input class="form-control" id="firstname" name="hoten" placeholder="First Name" type="text">
+							</div>
+
+
+							<div class="form-group">
+								 <input class="form-control" id="lastname" name="hoten" placeholder="Last Name" type="text">
+							</div>
+
+
+							<div class="checkbox">
+								<label><input id="gender" name="gioitinh" type="checkbox" value=""> Male</label>
+							</div>
+
+
+							<div class="form-group">
+								<div class="example">
+									<h5 >Birth Date</h5>
+									<input id="birthdate" type="hidden">
+								</div>
+							</div>
+
+
+					
+							<input class="btn btn-custom btn-lg btn-block" id="btn-signup" type="submit" value="Save Change">
+							<input type="button" class ="btn btn-custom btn-lg btn-block btn-cancel" onclick="location.href='index.html';" value="Cancel" />
+						</form>
+							
+						<hr>
+					</div>
+				</div>
+				<!-- /.col-xs-12 -->
+			</div>
+			<!-- /.row -->
+		</div>
+		<!-- /.container -->
+	</section>
+
+	
+
+	<footer id="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<p>For a better travel experience</p>
+
+
+					<p>Create by <strong><a href="https://www.facebook.com/thiendaoxuan" target="_blank">TVT</a></strong></p>
+				</div>
+			</div>
+		</div>
+		<br>
+	</footer>
+	
+	<div class="modal fade messageModal" id="messageBox" role="dialog">
+		<div class="modal-dialog">      
+			<div class="modal-content">
+				<div class="modal-body">
+					<h3 style="font-weight:bold" id='messageTitle'> TITLE <h3>
+					<h4 id="messageText"> Some message in the message box that maybe long or not so long <h4>
+				</div>
+				<div class="modal-footer">
+				<button class="btn btn-custom" data-dismiss="modal" type="button"> OK </button>
+				</div>
+				</div>
+				</div>
+				</div>
+
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>	
+	<script src="js/jquery.date-dropdowns.min.js"></script>
+	<script src='js/myJS/global.js'></script>
+	<script src="js/myJS/editProfile.js"></script>
+	
+</body>
+</html>

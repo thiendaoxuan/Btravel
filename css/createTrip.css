@@ -1,0 +1,188 @@
+body {
+    padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+
+.hero-spacer {
+    margin-top: 50px;
+}
+
+.hero-feature {
+    margin-bottom: 30px;
+}
+
+footer {
+    margin: 50px 0;
+}
+
+.navbar-default {
+    border-color: rgba(34,34,34,.05);
+    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    background-color: #fff;
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+}
+
+.navbar-default .navbar-header .navbar-brand {
+    text-transform: uppercase;
+    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    font-weight: 700;
+    color: #f05f40;
+}
+
+.navbar-default .navbar-header .navbar-brand:hover,
+.navbar-default .navbar-header .navbar-brand:focus {
+    color: #eb3812;
+}
+
+.navbar-default .nav > li>a,
+.navbar-default .nav>li>a:focus {
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 700;
+    color: #222;
+}
+
+.navbar-default .nav > li>a:hover,
+.navbar-default .nav>li>a:focus:hover {
+    color: #f05f40;
+}
+
+.navbar-default .nav > li.active>a,
+.navbar-default .nav>li.active>a:focus {
+    color: #f05f40!important;
+    background-color: transparent;
+}
+
+.navbar-default .nav > li.active>a:hover,
+.navbar-default .nav>li.active>a:focus:hover {
+    background-color: transparent;
+}
+
+.highLight {
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    padding: 10px;
+
+    margin : 15px;
+    margin-bottom: 30px;
+    margin-left: 0px;
+}
+
+.background {
+    background-color: #ffff66;
+}
+
+.detail {
+    width: 90%;
+    height: 50px;
+    
+}
+
+.fit {
+    width: 90%;
+    max-width: 400px;
+}
+
+.hero-spacer {
+    margin-top: 50px;
+}
+
+.hero-feature {
+    margin-bottom: 30px;
+}
+
+
+.thumbnail{
+    border-radius: 10px;
+}
+
+.inLine{
+    display: inline;
+}
+
+.groupInside {
+    margin: 5%;
+}
+
+#Container {
+    margin-left: 5%;
+    margin-right: 5%;   
+}
+
+#formContent {  
+    display: block;
+    margin: auto;
+    max-width: 800px;   
+    border-radius: 5px;
+    
+}
+
+
+
+
+
+#create{
+    margin: 5px;
+}
+
+h4 {
+    color: #ff9900;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    margin: 10px 0px 5px 0px;
+}
+
+p{
+    margin: 0px 0px 0px 0px;
+}
+
+
+textarea {
+    border-radius: 4px;
+}
+
+input {
+    border-radius: 4px;
+    
+    margin: 0px 0px 10px 0px;
+}
+
+#tripMainInfo textarea {
+    height: 120px;
+}
+
+#tripMainInfo .row .col-xs-5 {
+    min-width: 100px;
+    max-width: 200px;
+}
+#tripMainInfo .row .col-xs-1 {
+    width: 10px;
+}
+
+#tripMianInfo input 
+
+.row_input {
+    float: left;
+}
+
+.warningtext{
+    color: red;
+    font-weight: 400;
+}
+
+
+.date select {
+    padding: 10px;
+    background: #ffffff;
+    border: 1px solid #CCCCCC;
+    border-radius: 3px;
+    margin: 0 3px;
+}
+
+.date select.invalid {
+    color: #E9403C;
+}
+

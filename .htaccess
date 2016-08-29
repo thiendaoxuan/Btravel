@@ -1,0 +1,30 @@
+php_flag zlib.output_compression On
+php_value zlib.output_compression_level 5
+
+
+Options +FollowSymlinks -MultiViews
+
+RewriteEngine on
+
+
+
+# to make `/path/index.html` to /path/
+
+RewriteCond %{THE_REQUEST} ^GET\s(.*/)index\.html [NC]
+
+RewriteRule . %1 [NE,R=301,L]
+
+
+
+RewriteCond %{THE_REQUEST} ^GET\s.+\.html [NC]
+
+RewriteRule ^(.+)\.html$ /$1 [NE,R=301,L,NC]
+
+
+
+RewriteCond %{REQUEST_URI} !\.html$ [NC]
+
+RewriteCond %{REQUEST_FILENAME}.html -f
+
+RewriteRule . %{REQUEST_URI}.html [L]
+

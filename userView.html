@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title> Profile </title>
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/userView.css" type="text/css">
+    <!-- Custom Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+    rel='stylesheet' type='text/css'>
+
+
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+    
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="css/main-animate.min.css" type="text/css">
+    <!-- Custom CSS -->
+
+    
+
+</head>
+
+<body id="page-top" class="background">
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <div class='inLine'>
+                    <a class="navbar-brand page-scroll" href="#page-top">BTravel </a>
+
+                </div>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right" id="menuBar">
+                    <li>
+                        <a class="page-scroll" href="index.html">Welcome</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="findTrip.html" id='findTripPagebtn'> Find a trip </a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <br>
+    <br>
+    <br>
+
+    <div id="Container" >
+
+        <div id="userContent">
+
+            <div id="thumbContent" class="thumbnail" >
+
+               <img src='img/unknownAvatar.png' id='userAvatar'>
+               <br>
+               <div id="changeAvatarForm">
+               <div style="text-align: center; margin : auto; ">
+                   <button class="btn btn-primary" onclick="showUploadAvatar();" style=" width : 200px"> Change profile image </button>
+               </div>
+               <div style=" width : 200px; margin : 0 auto; display : none" id="uploadAvatar">
+                   <br>
+                   <form id="avatarForm" >
+                       <input type="file" name="avatar" id="avatarToUpload" required accept='image/*'>
+                       <input type="text" name="token" id="uploadToken" value="" style ="display : none">
+
+                   </form>
+                   <br>
+                   <div style="display : inline">
+                       <button class="btn btn-primary" onclick="uploadAvatar();"> Upload </button>
+                       <button class="btn btn-default" onclick="hideUploadAvatar();"> Cancel </button>
+                   </div>
+               </div>
+               </div>
+
+               <div id='contactInfo'>
+
+                <h4 class='sectionTitle' style='color: #ffffff;'> Contact Infos </h4>
+                <div  class='row'>
+                    <div class='col-sm-6'>
+                        <img class = 'contactIcon' src ='img/phone.png' align="middle" >
+                        <p class = 'info_contact'  id='userPhone'> - </p>
+                    </div>
+                    <div class='col-sm-6'>
+                        <img class = 'contactIcon' src ='img/email.png' align="middle">
+                        <p class = 'info_contact'  id='userEmail'> -</p>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div id='profile'>
+                <h4 class='sectionTitle' style='color: #000000;'> Profile </h4>
+
+                <div class = 'row'>
+                    <div class = 'col-sm-6 pad-left'> 
+                        <div class='place-data'>
+                            <span style =' font-weight: 600'> Name : </span>
+                            <span id='userRealName'> - </span> <br>
+                            <span style =' font-weight: 600'> BirthDate : </span>
+                            <span id='userBirthDate'>- </span>
+                        </div>
+                    </div>
+                    <div class = 'col-sm-6 pad-left'> 
+                        <div class='place-data'>
+                            <span style =' font-weight: 600'> Gender : </span>
+                            <span style ='' id='userGender'> - </span> <br>
+                            <span style =' font-weight: 600'> Prefer language : </span>
+                            <span style ='' id='userLanguage'> - </span>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+        <div id="tripJoint" class="thumbnail">
+            <h3 style="text-align : center; font-weight : bold; "> Trip Joint </h3>
+
+            <div class="oneJointTrip" style="display:none;" >
+                <img src="img/header.jpg">
+
+                <p> A not very long trip Title </p>
+
+            </div>
+        </div>
+
+        <div id="tripGuide" class="thumbnail">
+            <h3 style="text-align : center; font-weight : bold; "> Guiding Experience </h3>
+            <div id='rate'>
+
+            </div>
+
+
+            
+        </div>
+
+        <div style="text-align : center">
+            <a href ="createTrip.html" ><button class="btn btn-primary">Create Trip </button></a>
+
+        </div>
+
+
+    </div>
+</div>
+
+
+<div id="wrap" class="endpage">
+</div>
+<!-- jQuery -->
+<script src="js/jquery.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+
+<script src="js/myJS/global.js"></script>
+<script src="js/myJS/navBar.js"></script>
+<script src="js/myJS/userView.js"></script>
+
+</body>
+
+<!-- /.modal -->
+
+<div class="modal fade messageModal" id="messageBox" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <h3 style="font-weight:bold" id='messageTitle'> TITLE <h3>
+                 <h4 id="messageText"> Some message in the message box that maybe long or not so long <h4>
+                 </div>
+                 <div class="modal-footer">
+                    <button class="btn btn-custom" data-dismiss="modal" type="button"> OK </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </html>

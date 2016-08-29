@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<title>Sign Up</title>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+	
+	<link href="css/index.css" rel="stylesheet">
+
+</head>
+
+<body>
+	<section id="login">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="form-wrap">
+						<h1>Create new account</h1>
+
+
+						<form action="http://51304928.host22.com/signUp.php" autocomplete="off" id="signUpForm" method="post" name="signUpForm" role="form">
+							<div class="form-group">
+								<input class="form-control" id="username" name="username" placeholder="Username" type="text">
+							</div>
+
+
+							<div class="form-group">
+								<input class="form-control" id="passwords" name="passwords" placeholder="Password" type="password">
+							</div>
+
+
+							<div class="form-group">
+								<input class="form-control" id="repasswords" name="repasswords" placeholder="RePassword" type="password">
+							</div>
+
+
+							<div class="form-group">
+								<input class="form-control" id="email" name="email" placeholder="Email" type="text">
+							</div>
+
+
+							<div class="form-group">
+								<input class="form-control" id="firstname" name="hoten" placeholder="First Name" type="text">
+							</div>
+
+
+							<div class="form-group">
+								 <input class="form-control" id="lastname" name="hoten" placeholder="Last Name" type="text">
+							</div>
+
+
+							<div class="checkbox">
+								<label><input id="gender" name="gioitinh" type="checkbox" value=""> Male</label>
+							</div>
+
+
+							<div class="form-group">
+								<div class="example">
+									<h5 >Birth Date</h5>
+									<input id="birthdate" type="hidden">
+								</div>
+							</div>
+
+
+							<div class="checkbox">
+								<label><input id="isAgree" name="isAgree" type="checkbox" value="">I agree to *AppName* 's <a href="signUp.html">terms and agreements</a></label>
+							</div>
+							<input class="btn btn-custom btn-lg btn-block" id="btn-signup" type="submit" value="Sign Up">
+							<input type="button" class ="btn btn-custom btn-lg btn-block btn-cancel" onclick="location.href='login.html';" value="Cancel" />
+						</form>
+							
+						<hr>
+					</div>
+				</div>
+				<!-- /.col-xs-12 -->
+			</div>
+			<!-- /.row -->
+		</div>
+		<!-- /.container -->
+	</section>
+
+	
+
+	<footer id="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<p>For a better travel experience</p>
+
+
+					<p>Create by <strong><a href="https://www.facebook.com/thiendaoxuan" target="_blank">TVT</a></strong></p>
+				</div>
+			</div>
+		</div>
+		<br>
+	</footer>
+	
+	<div class="modal fade messageModal" id="messageBox" role="dialog">
+		<div class="modal-dialog">      
+			<div class="modal-content">
+				<div class="modal-body">
+					<h3 style="font-weight:bold" id='messageTitle'> TITLE <h3>
+					<h4 id="messageText"> Some message in the message box that maybe long or not so long <h4>
+				</div>
+				<div class="modal-footer">
+				<button class="btn btn-custom" data-dismiss="modal" type="button"> OK </button>
+				</div>
+				</div>
+				</div>
+				</div>
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>	
+	<script src="js/jquery.date-dropdowns.min.js"></script>
+	<script src='js/myJS/global.js'></script>
+	<script src="js/myJS/signUp.js"></script>
+</body>
+</html>
